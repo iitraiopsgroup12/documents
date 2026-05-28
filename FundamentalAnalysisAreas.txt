@@ -1,0 +1,89 @@
+# Sections for Fundamental Analysis
+
+1. **Financial Results**
+   Quarterly and yearly profit/loss, revenue, margins, EPS, cash flow indicators.
+
+2. **Annual Reports**
+   Most comprehensive source: management discussion, business model, risks, strategy, segment data.
+
+3. **Annual Reports XBRL**
+   Structured financial data useful for automated analysis.
+
+4. **Announcements**
+   Real-time corporate updates affecting valuation and business outlook.
+
+5. **Board Meetings**
+   Helps track earnings dates, dividends, fund raising, mergers, etc.
+
+6. **Corporate Actions**
+   Bonus issues, stock splits, dividends, buybacks, rights issues.
+
+7. **Shareholding Patterns**
+   Promoter holding, FII/DII participation, public ownership trends.
+
+8. **Shareholding Patterns SDD**
+   More structured disclosures of holdings and changes.
+
+9. **Related Party Transactions**
+   Important for governance quality and possible fund diversion risks.
+
+10. **Corporate Governance**
+    Board independence, governance standards, compliance quality.
+
+11. **Investor Complaints**
+    Signals operational transparency and shareholder servicing quality.
+
+12. **Statement on Impact of Audit Qualification**
+    Detects accounting concerns and audit red flags.
+
+13. **Secretarial Compliance**
+    Regulatory compliance and governance discipline.
+
+14. **Business Responsibility and Sustainability Report**
+    ESG analysis, sustainability practices, long-term risk assessment.
+
+15. **Insider Trading**
+    Promoter/management buying or selling activity.
+
+16. **Insider Trading-Plan**
+    Planned insider trades that may indicate management expectations.
+
+17. **Shareholder’s Meetings**
+    Resolutions, voting patterns, governance decisions.
+
+18. **Voting Results**
+    Reveals shareholder support or resistance to company resolutions.
+
+19. **Statement of Deviation/Variation**
+    Whether raised funds are being used as promised.
+
+20. **Event Calendar**
+    Useful for tracking earnings announcements and important corporate events.
+
+---
+
+# High-Priority Bonus Sections (Situationally Important)
+
+These are extremely valuable for specific types of companies/events:
+
+* **Rights & QIP** → Capital raising analysis
+* **Preferential Issue** → Dilution and promoter activity
+* **Debt Centralised Database** → Debt repayment and credit quality
+* **Credit Rating Details** → Financial stability and leverage risk
+* **Default Payment Details** → Serious red flag indicator
+* **Regulation 29 / 31 (SAST)** → Promoter stake changes and pledging
+* **Pledged Data** → Promoter share pledge risk
+* **Scheme of Arrangements** → Mergers, demergers, restructuring
+* **Information Memorandum** → Debt issue details and fundraising disclosures
+
+---
+
+# Most Critical 5 (If You Have Limited Time)
+
+If you want only the essentials:
+
+1. Financial Results
+2. Annual Reports
+3. Announcements
+4. Shareholding Patterns
+5. Corporate Governance

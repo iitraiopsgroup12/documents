@@ -1,0 +1,60 @@
+
+---------------------------------------------------------------------------------------------------
+-	User Login Window
+	-	User need to login with SSO or Multi factor authentication.
+	-	Analysis 
+		-	What credential provided we need to use and integrated with Selected cloud.
+		
+-	On-boarded NSE Listed Company Window
+	-	User can see the List of company already on-boarded for analysis.
+	-	User can select new company from the drop down.
+		-	Requirement 
+			-	Drop-down should have autocomplete text box fetching all company from NSE.
+	-	User can initiated the Agentic Workflow to load data from Different sources. 
+		-	NSE MCP Server
+		-	NSE Web Site -> https://www.nseindia.com/companies-listing/corporate-filings-announcements
+		-	Individual Company Website
+		-	Credit Rating Agencies
+		-	Market Data providers
+		-	Sources are mapped to source type 
+			1. Financial Results
+			2. Annual/Quakerly Reports
+			3. Announcements
+			4. Shareholding Patterns
+			5. Corporate Governance	
+			6. Board Meetings
+			7. Corporate Actions
+-	Manage on-boarded companies	
+		-	User can initiate update to get latest information about the company.
+		-	Use can set scheduler to initiated update.
+		-	User can manually provide source to get latest update.
+			-	File upload
+			-	Web Search
+		-	User can see internal history.
+		
+-	Company Summary
+	-	Load about what business company is doing overall summary
+	-	Load about company fundamental summary
+	-	Load about company Technical summary
+	- 	Load latest correspondent received by Stock Exchange. 
+	-	Load KPI Summary categories wise
+	-	Load Chat box
+	
+
+------------------------------------------------------------------------------------------------
+Tech Stack
+------------------------------------------------------------------------------------------------
+-	Authentication provided
+-	LangChain
+-	LangGraph 
+-	ChromaDB
+-	Document Splitter
+-	InMeomory File based database
+-	Streamlit
+-	Kubernetes
+-	Helm Chart
+-	Jenkins
+-	ArgoCD
+-	GitHub
+-	NLP Implementation for Market Data Sentiment Analyser https://github.com/ShaonINT/breaking_news_market_sentiment
+

@@ -1,0 +1,40 @@
+# Theme 12: AI Financial Document Q&A Assistant
+
+## Problem Statement
+
+Users struggle to understand financial reports.
+
+---
+
+## Learners Can Create
+
+- Annual reports
+- Fake balance sheets
+
+---
+
+## AI Features
+
+- RAG chatbot
+- Financial summarization
+- KPI extraction
+
+---
+
+## Agents
+
+- Retrieval Agent
+- KPI Extraction Agent
+- Summary Agent
+
+---
+
+## Workflow
+
+RAG workflow with memory.
+
+---
+
+## AWS Deployment
+
+Deploy chatbot on AWS EC2.

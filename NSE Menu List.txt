@@ -1,0 +1,188 @@
+# Corporate Filings Navigation
+
+- Dashboard
+  - `/companies-listing/corporate-filings-application`
+
+- Announcements
+  - `/companies-listing/corporate-filings-announcements`
+
+- Announcements XBRL
+  - `/companies-listing/corporate-filings-announcements-xbrl`
+
+- Annual Reports
+  - `/companies-listing/corporate-filings-annual-reports`
+
+- Annual Reports XBRL
+  - `/companies-listing/corporate-filings-annual-reports-xbrl`
+
+- Business Responsibility and Sustainability Report
+  - `/companies-listing/corporate-filings-bussiness-sustainabilitiy-reports`
+
+- Board Meetings
+  - `/companies-listing/corporate-filings-board-meetings`
+
+- Corporate Actions
+  - `/companies-listing/corporate-filings-actions`
+
+- Company Directory
+  - `/companies-listing/corporate-filings-directory`
+
+- Corporate Governance
+  - `/companies-listing/corporate-filings-governance`
+
+- Daily Buy Back / Redemption
+  - `/companies-listing/corporate-filings-daily-buy-back`
+
+- Debt Centralised Database
+  - Credit Rating Details
+    - `/companies-listing/debt-centralised-database/crd`
+  - Default Payment Details
+    - `/companies-listing/debt-centralised-database/dpd`
+  - Interest Payment Details
+    - `/companies-listing/debt-centralised-database/ipd`
+  - Redemption Payment Details
+    - `/companies-listing/debt-centralised-database/rpd`
+  - Regulation 60
+    - `/companies-listing/debt-centralised-database`
+
+- Debt Liquidity Window
+  - `/companies-listing/announcement-liquidity-window`
+
+- Debt – Regulation 50 Intimations
+  - `/companies-listing/debt-centralised-database/debtreg50`
+
+- Event Calendar
+  - `/companies-listing/corporate-filings-event-calendar`
+
+- Financial Results
+  - `/companies-listing/corporate-filings-financial-results`
+
+- Financial Results Comparision
+  - `/companies-listing/corporate-filings-financial-results-comparision`
+
+- Further Issues XBRL Fillings
+  - American Depository Receipt
+    - `/companies-listing/corporate-filings-ADR`
+  - Global Depository Receipt
+    - `/companies-listing/corporate-filings-GDR`
+  - Qualified Institutional Placement
+    - `/companies-listing/corporate-filings-QIP`
+  - Foreign Currency Convertible Bonds
+    - `/companies-listing/corporate-filings-FCCB`
+  - Preferential Issue
+    - `/companies-listing/corporate-filings-PREF`
+  - Right Issue
+    - `/companies-listing/corporate-filings-RI`
+
+- Insider Trading
+  - `/companies-listing/corporate-filings-insider-trading`
+
+- Insider Trading-Plan
+  - `/companies-listing/corporate-filings-insider-trading-plan`
+
+- Integrated Filing XBRL
+  - Integrated Filing- Financials
+    - `/companies-listing/corporate-integrated-filing?integratedType=integratedfilingfinancials`
+  - Integrated Filing- Governance
+    - `/companies-listing/corporate-integrated-filing?integratedType=integratedfilinggovernance`
+
+- Investor Complaints
+  - `/companies-listing/corporate-filings-investor-complaints`
+
+- Issuer Offer Documents / Issue Summary Document
+  - Issuer Offer Documents
+    - `/companies-listing/corporate-filings-offer-documents`
+  - Issue Summary Document
+    - `/companies-listing/corporate-filings-summary-documents`
+  - Rights & QIP
+    - `/companies-listing/corporate-filings-rights`
+  - Scheme of Arrangements
+    - `/companies-listing/corporate-filings-scheme-document`
+  - Information Memorandum
+    - `/companies-listing/corporate-filings-information-memorandum`
+
+- Loss/Duplicate-Share Certificate- XBRL
+  - `/companies-listing/corporate-filings-announcements-xbrl-loss-share`
+
+- Mutual Fund PIT Disclosure
+  - Alignment of Interest - Reg 25 (16B)
+    - `/companies-listing/corporate-filings-Alignmentofinterest`
+  - Event Based Disclosures - Reg 5E (2) - RTA
+    - `/companies-listing/corporate-filings-EBD`
+  - Off Market Transaction – Reg 5D(1)(I)
+    - `/companies-listing/corporate-filings-OffermarketTranction`
+  - Quarterly Disclosures - Reg 5E (1) - RTA
+    - `/companies-listing/corporate-filings-QD`
+  - Trading Plan - Reg 5D(1)(IV)
+    - `/companies-listing/corporate-filings-TradingPlan`
+  - UPSI
+    - `/companies-listing/corporate-filings-UPSI`
+
+- Mutual Funds Updates
+  - `/companies-listing/mutual-funds-updates`
+
+- Related Party Transactions
+  - `/companies-listing/related-party-transactions`
+
+- SAST Regulations
+  - Regulation 29
+    - `/companies-listing/corporate-filings-regulation-29`
+  - Regulation 31(1) & 31(2)
+    - `/companies-listing/corporate-filings-regulation-31`
+  - Reason for Encumbrance
+    - `/companies-listing/corporate-filings-encumbrance`
+  - Pledged Data
+    - `/companies-listing/corporate-filings-pledged-data`
+
+- SDD - Credit Rating
+  - ESG
+    - `/companies-listing/corporate-sdd-credit-rating-esg`
+  - Regulation 30
+    - `/companies-listing/corporate-sdd-credit-rating-reg30`
+
+- Statement of Deviation/Variation
+  - `/companies-listing/corporate-filings-statement-of-deviation-variation`
+
+- System Driven Disclosures – PIT
+  - `/companies-listing/corporate-filings-pit-annual`
+
+- System Driven Disclosures – SAST
+  - Regulation 7 (Promoter)
+    - `/companies-listing/corporate-filings-regulation-7-promoter`
+  - Regulation 7 (Non Promoters)
+    - `/companies-listing/corporate-filings-regulation-7-non-promoter`
+  - Regulation 29 (Promoters)
+    - `/companies-listing/corporate-filings-regulation-29-promoters`
+  - Regulation 29 (Non Promoters)
+    - `/companies-listing/corporate-filings-regulation-29-non-promoters`
+  - Regulation 30 (Annual)
+    - `/companies-listing/corporate-filings-regulation-30-annual`
+  - Regulation 31 (Event Based)
+    - `/companies-listing/corporate-filings-regulation-31-event`
+
+- Secretarial Compliance
+  - `/companies-listing/corporate-filings-secretarial-compliance-report`
+
+- Share Transfers
+  - `/companies-listing/corporate-filings-share-transfers`
+
+- Shareholder’s Meetings
+  - `/companies-listing/corporate-filings-postal-ballot`
+
+- Shareholding Patterns
+  - `/companies-listing/corporate-filings-shareholding-pattern`
+
+- Shareholding Patterns SDD
+  - `/companies-listing/corporate-filings-shareholding-pattern-sdd`
+
+- Statement on Impact of Audit Qualification
+  - `/companies-listing/statement-on-impact-of-audit-qualification`
+
+- Trading Window Disclosure- XBRL
+  - `/companies-listing/corporate-filings-announcements-xbrl-trading-window-disclosure`
+
+- Unitholding Patterns
+  - `/companies-listing/corporate-filings-unitholding-pattern`
+
+- Voting Results
+  - `/companies-listing/corporate-filings-voting-results`
