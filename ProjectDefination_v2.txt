@@ -1,0 +1,35 @@
+Problem Statement
+Financial documents such as annual reports, quarterly earnings reports, and investor presentations are often large, unstructured
+and difficult to analyze manually. Traditional keyword-based search lacks contextual understanding, making it challenging to quickly retrieve 
+relevant financial insights. Users require an intelligent system capable of understanding financial documents and answering questions through
+natural language interaction.
+
+Project Objective
+Develop an intelligent financial document analysis system capable of:
+1.Uploading and processing financial documents
+2.Performing semantic document retrieval using RAG
+3.Enabling natural language financial Q&A through an AI chatbot
+4.Generating citation-backed and document-grounded responses
+5.Producing financial summaries and insights
+6.Extracting key financial indicators (KPIs)
+
+
+Proposed AI Workflow
+1.Document parsing and text extraction
+2.Text chunking and preprocessing
+3.Embedding generation
+4.Vector database indexing and retrieval
+5.Context-aware response generation using LLM + RAG
+6.Optional workflow orchestration using LangGraph
+
+Proposed Technology Stack
+Layer	                        Technology
+Frontend	                    Streamlit
+Backend	                        FastAPI
+Document Storage	            AWS S3
+PDF Parsing                     PyMuPDF / OCR
+AI Framework	                LangChain / Optional LangGraph
+Vector Database	                ChromaDB/Pinecone
+LLM Integration	                OpenAI / RAG pipeline
+Deployment	                    AWS EC2
+
