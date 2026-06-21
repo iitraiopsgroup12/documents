@@ -1,0 +1,606 @@
+{
+  "version": "1.0",
+  "total_kpis": 50,
+  "kpi_documentation": [
+    {
+      "kpi_id": "revenue",
+      "business_name": "Revenue",
+      "business_meaning": "Measures revenue.",
+      "why_it_matters": "Used to evaluate revenue performance and business health.",
+      "good_indicator": "Depends on industry benchmarks and trend direction.",
+      "documents": [
+        "Income Statement",
+        "Balance Sheet",
+        "Cash Flow Statement"
+      ]
+    },
+    {
+      "kpi_id": "revenue_growth",
+      "business_name": "Revenue Growth",
+      "business_meaning": "Measures revenue growth.",
+      "why_it_matters": "Used to evaluate revenue growth performance and business health.",
+      "good_indicator": "Depends on industry benchmarks and trend direction.",
+      "documents": [
+        "Income Statement",
+        "Balance Sheet",
+        "Cash Flow Statement"
+      ]
+    },
+    {
+      "kpi_id": "yoy_revenue_growth",
+      "business_name": "Yoy Revenue Growth",
+      "business_meaning": "Measures yoy revenue growth.",
+      "why_it_matters": "Used to evaluate yoy revenue growth performance and business health.",
+      "good_indicator": "Depends on industry benchmarks and trend direction.",
+      "documents": [
+        "Income Statement",
+        "Balance Sheet",
+        "Cash Flow Statement"
+      ]
+    },
+    {
+      "kpi_id": "gross_profit",
+      "business_name": "Gross Profit",
+      "business_meaning": "Measures gross profit.",
+      "why_it_matters": "Used to evaluate gross profit performance and business health.",
+      "good_indicator": "Depends on industry benchmarks and trend direction.",
+      "documents": [
+        "Income Statement",
+        "Balance Sheet",
+        "Cash Flow Statement"
+      ]
+    },
+    {
+      "kpi_id": "gross_margin",
+      "business_name": "Gross Margin",
+      "business_meaning": "Measures gross margin.",
+      "why_it_matters": "Used to evaluate gross margin performance and business health.",
+      "good_indicator": "Depends on industry benchmarks and trend direction.",
+      "documents": [
+        "Income Statement",
+        "Balance Sheet",
+        "Cash Flow Statement"
+      ]
+    },
+    {
+      "kpi_id": "ebitda",
+      "business_name": "Ebitda",
+      "business_meaning": "Measures ebitda.",
+      "why_it_matters": "Used to evaluate ebitda performance and business health.",
+      "good_indicator": "Depends on industry benchmarks and trend direction.",
+      "documents": [
+        "Income Statement",
+        "Balance Sheet",
+        "Cash Flow Statement"
+      ]
+    },
+    {
+      "kpi_id": "ebitda_margin",
+      "business_name": "Ebitda Margin",
+      "business_meaning": "Measures ebitda margin.",
+      "why_it_matters": "Used to evaluate ebitda margin performance and business health.",
+      "good_indicator": "Depends on industry benchmarks and trend direction.",
+      "documents": [
+        "Income Statement",
+        "Balance Sheet",
+        "Cash Flow Statement"
+      ]
+    },
+    {
+      "kpi_id": "ebit",
+      "business_name": "Ebit",
+      "business_meaning": "Measures ebit.",
+      "why_it_matters": "Used to evaluate ebit performance and business health.",
+      "good_indicator": "Depends on industry benchmarks and trend direction.",
+      "documents": [
+        "Income Statement",
+        "Balance Sheet",
+        "Cash Flow Statement"
+      ]
+    },
+    {
+      "kpi_id": "operating_margin",
+      "business_name": "Operating Margin",
+      "business_meaning": "Measures operating margin.",
+      "why_it_matters": "Used to evaluate operating margin performance and business health.",
+      "good_indicator": "Depends on industry benchmarks and trend direction.",
+      "documents": [
+        "Income Statement",
+        "Balance Sheet",
+        "Cash Flow Statement"
+      ]
+    },
+    {
+      "kpi_id": "net_income",
+      "business_name": "Net Income",
+      "business_meaning": "Measures net income.",
+      "why_it_matters": "Used to evaluate net income performance and business health.",
+      "good_indicator": "Depends on industry benchmarks and trend direction.",
+      "documents": [
+        "Income Statement",
+        "Balance Sheet",
+        "Cash Flow Statement"
+      ]
+    },
+    {
+      "kpi_id": "net_profit_margin",
+      "business_name": "Net Profit Margin",
+      "business_meaning": "Measures net profit margin.",
+      "why_it_matters": "Used to evaluate net profit margin performance and business health.",
+      "good_indicator": "Depends on industry benchmarks and trend direction.",
+      "documents": [
+        "Income Statement",
+        "Balance Sheet",
+        "Cash Flow Statement"
+      ]
+    },
+    {
+      "kpi_id": "operating_cash_flow",
+      "business_name": "Operating Cash Flow",
+      "business_meaning": "Measures operating cash flow.",
+      "why_it_matters": "Used to evaluate operating cash flow performance and business health.",
+      "good_indicator": "Depends on industry benchmarks and trend direction.",
+      "documents": [
+        "Income Statement",
+        "Balance Sheet",
+        "Cash Flow Statement"
+      ]
+    },
+    {
+      "kpi_id": "free_cash_flow",
+      "business_name": "Free Cash Flow",
+      "business_meaning": "Measures free cash flow.",
+      "why_it_matters": "Used to evaluate free cash flow performance and business health.",
+      "good_indicator": "Depends on industry benchmarks and trend direction.",
+      "documents": [
+        "Income Statement",
+        "Balance Sheet",
+        "Cash Flow Statement"
+      ]
+    },
+    {
+      "kpi_id": "cash_flow_margin",
+      "business_name": "Cash Flow Margin",
+      "business_meaning": "Measures cash flow margin.",
+      "why_it_matters": "Used to evaluate cash flow margin performance and business health.",
+      "good_indicator": "Depends on industry benchmarks and trend direction.",
+      "documents": [
+        "Income Statement",
+        "Balance Sheet",
+        "Cash Flow Statement"
+      ]
+    },
+    {
+      "kpi_id": "current_ratio",
+      "business_name": "Current Ratio",
+      "business_meaning": "Measures current ratio.",
+      "why_it_matters": "Used to evaluate current ratio performance and business health.",
+      "good_indicator": "Depends on industry benchmarks and trend direction.",
+      "documents": [
+        "Income Statement",
+        "Balance Sheet",
+        "Cash Flow Statement"
+      ]
+    },
+    {
+      "kpi_id": "quick_ratio",
+      "business_name": "Quick Ratio",
+      "business_meaning": "Measures quick ratio.",
+      "why_it_matters": "Used to evaluate quick ratio performance and business health.",
+      "good_indicator": "Depends on industry benchmarks and trend direction.",
+      "documents": [
+        "Income Statement",
+        "Balance Sheet",
+        "Cash Flow Statement"
+      ]
+    },
+    {
+      "kpi_id": "working_capital",
+      "business_name": "Working Capital",
+      "business_meaning": "Measures working capital.",
+      "why_it_matters": "Used to evaluate working capital performance and business health.",
+      "good_indicator": "Depends on industry benchmarks and trend direction.",
+      "documents": [
+        "Income Statement",
+        "Balance Sheet",
+        "Cash Flow Statement"
+      ]
+    },
+    {
+      "kpi_id": "debt_to_equity",
+      "business_name": "Debt To Equity",
+      "business_meaning": "Measures debt to equity.",
+      "why_it_matters": "Used to evaluate debt to equity performance and business health.",
+      "good_indicator": "Depends on industry benchmarks and trend direction.",
+      "documents": [
+        "Income Statement",
+        "Balance Sheet",
+        "Cash Flow Statement"
+      ]
+    },
+    {
+      "kpi_id": "debt_to_assets",
+      "business_name": "Debt To Assets",
+      "business_meaning": "Measures debt to assets.",
+      "why_it_matters": "Used to evaluate debt to assets performance and business health.",
+      "good_indicator": "Depends on industry benchmarks and trend direction.",
+      "documents": [
+        "Income Statement",
+        "Balance Sheet",
+        "Cash Flow Statement"
+      ]
+    },
+    {
+      "kpi_id": "interest_coverage",
+      "business_name": "Interest Coverage",
+      "business_meaning": "Measures interest coverage.",
+      "why_it_matters": "Used to evaluate interest coverage performance and business health.",
+      "good_indicator": "Depends on industry benchmarks and trend direction.",
+      "documents": [
+        "Income Statement",
+        "Balance Sheet",
+        "Cash Flow Statement"
+      ]
+    },
+    {
+      "kpi_id": "net_debt_to_ebitda",
+      "business_name": "Net Debt To Ebitda",
+      "business_meaning": "Measures net debt to ebitda.",
+      "why_it_matters": "Used to evaluate net debt to ebitda performance and business health.",
+      "good_indicator": "Depends on industry benchmarks and trend direction.",
+      "documents": [
+        "Income Statement",
+        "Balance Sheet",
+        "Cash Flow Statement"
+      ]
+    },
+    {
+      "kpi_id": "roe",
+      "business_name": "Roe",
+      "business_meaning": "Measures roe.",
+      "why_it_matters": "Used to evaluate roe performance and business health.",
+      "good_indicator": "Depends on industry benchmarks and trend direction.",
+      "documents": [
+        "Income Statement",
+        "Balance Sheet",
+        "Cash Flow Statement"
+      ]
+    },
+    {
+      "kpi_id": "roa",
+      "business_name": "Roa",
+      "business_meaning": "Measures roa.",
+      "why_it_matters": "Used to evaluate roa performance and business health.",
+      "good_indicator": "Depends on industry benchmarks and trend direction.",
+      "documents": [
+        "Income Statement",
+        "Balance Sheet",
+        "Cash Flow Statement"
+      ]
+    },
+    {
+      "kpi_id": "roce",
+      "business_name": "Roce",
+      "business_meaning": "Measures roce.",
+      "why_it_matters": "Used to evaluate roce performance and business health.",
+      "good_indicator": "Depends on industry benchmarks and trend direction.",
+      "documents": [
+        "Income Statement",
+        "Balance Sheet",
+        "Cash Flow Statement"
+      ]
+    },
+    {
+      "kpi_id": "roic",
+      "business_name": "Roic",
+      "business_meaning": "Measures roic.",
+      "why_it_matters": "Used to evaluate roic performance and business health.",
+      "good_indicator": "Depends on industry benchmarks and trend direction.",
+      "documents": [
+        "Income Statement",
+        "Balance Sheet",
+        "Cash Flow Statement"
+      ]
+    },
+    {
+      "kpi_id": "asset_turnover",
+      "business_name": "Asset Turnover",
+      "business_meaning": "Measures asset turnover.",
+      "why_it_matters": "Used to evaluate asset turnover performance and business health.",
+      "good_indicator": "Depends on industry benchmarks and trend direction.",
+      "documents": [
+        "Income Statement",
+        "Balance Sheet",
+        "Cash Flow Statement"
+      ]
+    },
+    {
+      "kpi_id": "inventory_turnover",
+      "business_name": "Inventory Turnover",
+      "business_meaning": "Measures inventory turnover.",
+      "why_it_matters": "Used to evaluate inventory turnover performance and business health.",
+      "good_indicator": "Depends on industry benchmarks and trend direction.",
+      "documents": [
+        "Income Statement",
+        "Balance Sheet",
+        "Cash Flow Statement"
+      ]
+    },
+    {
+      "kpi_id": "receivables_turnover",
+      "business_name": "Receivables Turnover",
+      "business_meaning": "Measures receivables turnover.",
+      "why_it_matters": "Used to evaluate receivables turnover performance and business health.",
+      "good_indicator": "Depends on industry benchmarks and trend direction.",
+      "documents": [
+        "Income Statement",
+        "Balance Sheet",
+        "Cash Flow Statement"
+      ]
+    },
+    {
+      "kpi_id": "payables_turnover",
+      "business_name": "Payables Turnover",
+      "business_meaning": "Measures payables turnover.",
+      "why_it_matters": "Used to evaluate payables turnover performance and business health.",
+      "good_indicator": "Depends on industry benchmarks and trend direction.",
+      "documents": [
+        "Income Statement",
+        "Balance Sheet",
+        "Cash Flow Statement"
+      ]
+    },
+    {
+      "kpi_id": "dso",
+      "business_name": "Dso",
+      "business_meaning": "Measures dso.",
+      "why_it_matters": "Used to evaluate dso performance and business health.",
+      "good_indicator": "Depends on industry benchmarks and trend direction.",
+      "documents": [
+        "Income Statement",
+        "Balance Sheet",
+        "Cash Flow Statement"
+      ]
+    },
+    {
+      "kpi_id": "dpo",
+      "business_name": "Dpo",
+      "business_meaning": "Measures dpo.",
+      "why_it_matters": "Used to evaluate dpo performance and business health.",
+      "good_indicator": "Depends on industry benchmarks and trend direction.",
+      "documents": [
+        "Income Statement",
+        "Balance Sheet",
+        "Cash Flow Statement"
+      ]
+    },
+    {
+      "kpi_id": "inventory_days",
+      "business_name": "Inventory Days",
+      "business_meaning": "Measures inventory days.",
+      "why_it_matters": "Used to evaluate inventory days performance and business health.",
+      "good_indicator": "Depends on industry benchmarks and trend direction.",
+      "documents": [
+        "Income Statement",
+        "Balance Sheet",
+        "Cash Flow Statement"
+      ]
+    },
+    {
+      "kpi_id": "cash_conversion_cycle",
+      "business_name": "Cash Conversion Cycle",
+      "business_meaning": "Measures cash conversion cycle.",
+      "why_it_matters": "Used to evaluate cash conversion cycle performance and business health.",
+      "good_indicator": "Depends on industry benchmarks and trend direction.",
+      "documents": [
+        "Income Statement",
+        "Balance Sheet",
+        "Cash Flow Statement"
+      ]
+    },
+    {
+      "kpi_id": "eps",
+      "business_name": "Eps",
+      "business_meaning": "Measures eps.",
+      "why_it_matters": "Used to evaluate eps performance and business health.",
+      "good_indicator": "Depends on industry benchmarks and trend direction.",
+      "documents": [
+        "Income Statement",
+        "Balance Sheet",
+        "Cash Flow Statement"
+      ]
+    },
+    {
+      "kpi_id": "diluted_eps",
+      "business_name": "Diluted Eps",
+      "business_meaning": "Measures diluted eps.",
+      "why_it_matters": "Used to evaluate diluted eps performance and business health.",
+      "good_indicator": "Depends on industry benchmarks and trend direction.",
+      "documents": [
+        "Income Statement",
+        "Balance Sheet",
+        "Cash Flow Statement"
+      ]
+    },
+    {
+      "kpi_id": "book_value_per_share",
+      "business_name": "Book Value Per Share",
+      "business_meaning": "Measures book value per share.",
+      "why_it_matters": "Used to evaluate book value per share performance and business health.",
+      "good_indicator": "Depends on industry benchmarks and trend direction.",
+      "documents": [
+        "Income Statement",
+        "Balance Sheet",
+        "Cash Flow Statement"
+      ]
+    },
+    {
+      "kpi_id": "dividend_payout_ratio",
+      "business_name": "Dividend Payout Ratio",
+      "business_meaning": "Measures dividend payout ratio.",
+      "why_it_matters": "Used to evaluate dividend payout ratio performance and business health.",
+      "good_indicator": "Depends on industry benchmarks and trend direction.",
+      "documents": [
+        "Income Statement",
+        "Balance Sheet",
+        "Cash Flow Statement"
+      ]
+    },
+    {
+      "kpi_id": "effective_tax_rate",
+      "business_name": "Effective Tax Rate",
+      "business_meaning": "Measures effective tax rate.",
+      "why_it_matters": "Used to evaluate effective tax rate performance and business health.",
+      "good_indicator": "Depends on industry benchmarks and trend direction.",
+      "documents": [
+        "Income Statement",
+        "Balance Sheet",
+        "Cash Flow Statement"
+      ]
+    },
+    {
+      "kpi_id": "revenue_cagr",
+      "business_name": "Revenue Cagr",
+      "business_meaning": "Measures revenue cagr.",
+      "why_it_matters": "Used to evaluate revenue cagr performance and business health.",
+      "good_indicator": "Depends on industry benchmarks and trend direction.",
+      "documents": [
+        "Income Statement",
+        "Balance Sheet",
+        "Cash Flow Statement"
+      ]
+    },
+    {
+      "kpi_id": "earnings_growth",
+      "business_name": "Earnings Growth",
+      "business_meaning": "Measures earnings growth.",
+      "why_it_matters": "Used to evaluate earnings growth performance and business health.",
+      "good_indicator": "Depends on industry benchmarks and trend direction.",
+      "documents": [
+        "Income Statement",
+        "Balance Sheet",
+        "Cash Flow Statement"
+      ]
+    },
+    {
+      "kpi_id": "net_interest_margin",
+      "business_name": "Net Interest Margin",
+      "business_meaning": "Measures net interest margin.",
+      "why_it_matters": "Used to evaluate net interest margin performance and business health.",
+      "good_indicator": "Depends on industry benchmarks and trend direction.",
+      "documents": [
+        "Income Statement",
+        "Balance Sheet",
+        "Cash Flow Statement"
+      ]
+    },
+    {
+      "kpi_id": "casa_ratio",
+      "business_name": "Casa Ratio",
+      "business_meaning": "Measures casa ratio.",
+      "why_it_matters": "Used to evaluate casa ratio performance and business health.",
+      "good_indicator": "Depends on industry benchmarks and trend direction.",
+      "documents": [
+        "Income Statement",
+        "Balance Sheet",
+        "Cash Flow Statement"
+      ]
+    },
+    {
+      "kpi_id": "gross_npa_ratio",
+      "business_name": "Gross Npa Ratio",
+      "business_meaning": "Measures gross npa ratio.",
+      "why_it_matters": "Used to evaluate gross npa ratio performance and business health.",
+      "good_indicator": "Depends on industry benchmarks and trend direction.",
+      "documents": [
+        "Income Statement",
+        "Balance Sheet",
+        "Cash Flow Statement"
+      ]
+    },
+    {
+      "kpi_id": "net_npa_ratio",
+      "business_name": "Net Npa Ratio",
+      "business_meaning": "Measures net npa ratio.",
+      "why_it_matters": "Used to evaluate net npa ratio performance and business health.",
+      "good_indicator": "Depends on industry benchmarks and trend direction.",
+      "documents": [
+        "Income Statement",
+        "Balance Sheet",
+        "Cash Flow Statement"
+      ]
+    },
+    {
+      "kpi_id": "provision_coverage_ratio",
+      "business_name": "Provision Coverage Ratio",
+      "business_meaning": "Measures provision coverage ratio.",
+      "why_it_matters": "Used to evaluate provision coverage ratio performance and business health.",
+      "good_indicator": "Depends on industry benchmarks and trend direction.",
+      "documents": [
+        "Income Statement",
+        "Balance Sheet",
+        "Cash Flow Statement"
+      ]
+    },
+    {
+      "kpi_id": "capital_adequacy_ratio",
+      "business_name": "Capital Adequacy Ratio",
+      "business_meaning": "Measures capital adequacy ratio.",
+      "why_it_matters": "Used to evaluate capital adequacy ratio performance and business health.",
+      "good_indicator": "Depends on industry benchmarks and trend direction.",
+      "documents": [
+        "Income Statement",
+        "Balance Sheet",
+        "Cash Flow Statement"
+      ]
+    },
+    {
+      "kpi_id": "tier1_capital_ratio",
+      "business_name": "Tier1 Capital Ratio",
+      "business_meaning": "Measures tier1 capital ratio.",
+      "why_it_matters": "Used to evaluate tier1 capital ratio performance and business health.",
+      "good_indicator": "Depends on industry benchmarks and trend direction.",
+      "documents": [
+        "Income Statement",
+        "Balance Sheet",
+        "Cash Flow Statement"
+      ]
+    },
+    {
+      "kpi_id": "loan_to_deposit_ratio",
+      "business_name": "Loan To Deposit Ratio",
+      "business_meaning": "Measures loan to deposit ratio.",
+      "why_it_matters": "Used to evaluate loan to deposit ratio performance and business health.",
+      "good_indicator": "Depends on industry benchmarks and trend direction.",
+      "documents": [
+        "Income Statement",
+        "Balance Sheet",
+        "Cash Flow Statement"
+      ]
+    },
+    {
+      "kpi_id": "cost_to_income_ratio",
+      "business_name": "Cost To Income Ratio",
+      "business_meaning": "Measures cost to income ratio.",
+      "why_it_matters": "Used to evaluate cost to income ratio performance and business health.",
+      "good_indicator": "Depends on industry benchmarks and trend direction.",
+      "documents": [
+        "Income Statement",
+        "Balance Sheet",
+        "Cash Flow Statement"
+      ]
+    },
+    {
+      "kpi_id": "credit_growth_ratio",
+      "business_name": "Credit Growth Ratio",
+      "business_meaning": "Measures credit growth ratio.",
+      "why_it_matters": "Used to evaluate credit growth ratio performance and business health.",
+      "good_indicator": "Depends on industry benchmarks and trend direction.",
+      "documents": [
+        "Income Statement",
+        "Balance Sheet",
+        "Cash Flow Statement"
+      ]
+    }
+  ]
+}

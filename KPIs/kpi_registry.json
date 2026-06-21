@@ -1,0 +1,926 @@
+{
+  "version": "1.0",
+  "domain": "financial_rag",
+  "total_kpis": 50,
+  "kpis": [
+
+    {
+      "id": "revenue",
+      "name": "Revenue",
+      "category": "growth",
+      "type": "direct",
+      "source_documents": ["Income Statement"],
+      "required_fields": ["revenue"],
+      "formula": null,
+      "aliases": ["sales", "net sales", "top line"],
+      "unit": "USD",
+      "mcp_tool": "extract_financial_metric"
+    },
+
+    {
+      "id": "revenue_growth",
+      "name": "Revenue Growth",
+      "category": "growth",
+      "type": "derived",
+      "source_documents": ["Income Statement"],
+      "required_fields": [
+        "current_revenue",
+        "previous_revenue"
+      ],
+      "formula": "((current_revenue-previous_revenue)/previous_revenue)*100",
+      "aliases": [
+        "sales growth",
+        "growth rate"
+      ],
+      "unit": "%",
+      "mcp_tool": "calculate_kpi"
+    },
+
+    {
+      "id": "yoy_revenue_growth",
+      "name": "YoY Revenue Growth",
+      "category": "growth",
+      "type": "derived",
+      "source_documents": ["Income Statement"],
+      "required_fields": [
+        "current_year_revenue",
+        "previous_year_revenue"
+      ],
+      "formula": "((current_year_revenue-previous_year_revenue)/previous_year_revenue)*100",
+      "aliases": [
+        "year over year growth",
+        "annual revenue growth"
+      ],
+      "unit": "%",
+      "mcp_tool": "calculate_kpi"
+    },
+
+    {
+      "id": "gross_profit",
+      "name": "Gross Profit",
+      "category": "profitability",
+      "type": "direct",
+      "source_documents": ["Income Statement"],
+      "required_fields": ["gross_profit"],
+      "formula": null,
+      "aliases": ["gross earnings"],
+      "unit": "USD",
+      "mcp_tool": "extract_financial_metric"
+    },
+
+    {
+      "id": "gross_margin",
+      "name": "Gross Margin",
+      "category": "profitability",
+      "type": "derived",
+      "source_documents": ["Income Statement"],
+      "required_fields": [
+        "gross_profit",
+        "revenue"
+      ],
+      "formula": "(gross_profit/revenue)*100",
+      "aliases": [
+        "gross profit margin"
+      ],
+      "unit": "%",
+      "mcp_tool": "calculate_kpi"
+    },
+
+    {
+      "id": "ebitda",
+      "name": "EBITDA",
+      "category": "profitability",
+      "type": "direct",
+      "source_documents": ["Income Statement"],
+      "required_fields": ["ebitda"],
+      "formula": null,
+      "aliases": [
+        "earnings before interest taxes depreciation amortization"
+      ],
+      "unit": "USD",
+      "mcp_tool": "extract_financial_metric"
+    },
+
+    {
+      "id": "ebitda_margin",
+      "name": "EBITDA Margin",
+      "category": "profitability",
+      "type": "derived",
+      "source_documents": ["Income Statement"],
+      "required_fields": [
+        "ebitda",
+        "revenue"
+      ],
+      "formula": "(ebitda/revenue)*100",
+      "aliases": [
+        "operating cash margin"
+      ],
+      "unit": "%",
+      "mcp_tool": "calculate_kpi"
+    },
+
+    {
+      "id": "ebit",
+      "name": "EBIT",
+      "category": "profitability",
+      "type": "direct",
+      "source_documents": ["Income Statement"],
+      "required_fields": ["ebit"],
+      "formula": null,
+      "aliases": [
+        "operating earnings"
+      ],
+      "unit": "USD",
+      "mcp_tool": "extract_financial_metric"
+    },
+
+    {
+      "id": "operating_margin",
+      "name": "Operating Margin",
+      "category": "profitability",
+      "type": "derived",
+      "source_documents": ["Income Statement"],
+      "required_fields": [
+        "ebit",
+        "revenue"
+      ],
+      "formula": "(ebit/revenue)*100",
+      "aliases": [
+        "operating profit margin"
+      ],
+      "unit": "%",
+      "mcp_tool": "calculate_kpi"
+    },
+
+    {
+      "id": "net_income",
+      "name": "Net Income",
+      "category": "profitability",
+      "type": "direct",
+      "source_documents": ["Income Statement"],
+      "required_fields": ["net_income"],
+      "formula": null,
+      "aliases": [
+        "net earnings",
+        "profit after tax"
+      ],
+      "unit": "USD",
+      "mcp_tool": "extract_financial_metric"
+    },
+
+    {
+      "id": "net_profit_margin",
+      "name": "Net Profit Margin",
+      "category": "profitability",
+      "type": "derived",
+      "source_documents": ["Income Statement"],
+      "required_fields": [
+        "net_income",
+        "revenue"
+      ],
+      "formula": "(net_income/revenue)*100",
+      "aliases": [
+        "bottom line margin"
+      ],
+      "unit": "%",
+      "mcp_tool": "calculate_kpi"
+    },
+
+    {
+      "id": "operating_cash_flow",
+      "name": "Operating Cash Flow",
+      "category": "cashflow",
+      "type": "direct",
+      "source_documents": ["Cash Flow Statement"],
+      "required_fields": ["operating_cash_flow"],
+      "formula": null,
+      "aliases": [
+        "cash from operations"
+      ],
+      "unit": "USD",
+      "mcp_tool": "extract_financial_metric"
+    },
+
+    {
+      "id": "free_cash_flow",
+      "name": "Free Cash Flow",
+      "category": "cashflow",
+      "type": "derived",
+      "source_documents": [
+        "Cash Flow Statement"
+      ],
+      "required_fields": [
+        "operating_cash_flow",
+        "capex"
+      ],
+      "formula": "operating_cash_flow-capex",
+      "aliases": [
+        "fcf"
+      ],
+      "unit": "USD",
+      "mcp_tool": "calculate_kpi"
+    },
+	
+	{
+    "id": "cash_flow_margin",
+    "name": "Cash Flow Margin",
+    "category": "cashflow",
+    "type": "derived",
+    "source_documents": ["Cash Flow Statement","Income Statement"],
+    "required_fields": ["operating_cash_flow","revenue"],
+    "formula": "(operating_cash_flow/revenue)*100",
+    "aliases": ["ocf margin"],
+    "unit": "%",
+    "mcp_tool": "calculate_kpi"
+  },
+
+  {
+    "id": "current_ratio",
+    "name": "Current Ratio",
+    "category": "liquidity",
+    "type": "derived",
+    "source_documents": ["Balance Sheet"],
+    "required_fields": ["current_assets","current_liabilities"],
+    "formula": "current_assets/current_liabilities",
+    "aliases": ["working capital ratio"],
+    "unit": "ratio",
+    "mcp_tool": "calculate_kpi"
+  },
+
+  {
+    "id": "quick_ratio",
+    "name": "Quick Ratio",
+    "category": "liquidity",
+    "type": "derived",
+    "source_documents": ["Balance Sheet"],
+    "required_fields": [
+      "current_assets",
+      "inventory",
+      "current_liabilities"
+    ],
+    "formula": "(current_assets-inventory)/current_liabilities",
+    "aliases": ["acid test ratio"],
+    "unit": "ratio",
+    "mcp_tool": "calculate_kpi"
+  },
+
+  {
+    "id": "working_capital",
+    "name": "Working Capital",
+    "category": "liquidity",
+    "type": "derived",
+    "source_documents": ["Balance Sheet"],
+    "required_fields": [
+      "current_assets",
+      "current_liabilities"
+    ],
+    "formula": "current_assets-current_liabilities",
+    "aliases": [],
+    "unit": "USD",
+    "mcp_tool": "calculate_kpi"
+  },
+
+  {
+    "id": "debt_to_equity",
+    "name": "Debt To Equity",
+    "category": "solvency",
+    "type": "derived",
+    "source_documents": ["Balance Sheet"],
+    "required_fields": [
+      "total_debt",
+      "shareholder_equity"
+    ],
+    "formula": "total_debt/shareholder_equity",
+    "aliases": ["d/e ratio"],
+    "unit": "ratio",
+    "mcp_tool": "calculate_kpi"
+  },
+
+  {
+    "id": "debt_to_assets",
+    "name": "Debt To Assets",
+    "category": "solvency",
+    "type": "derived",
+    "source_documents": ["Balance Sheet"],
+    "required_fields": [
+      "total_debt",
+      "total_assets"
+    ],
+    "formula": "total_debt/total_assets",
+    "aliases": [],
+    "unit": "ratio",
+    "mcp_tool": "calculate_kpi"
+  },
+
+  {
+    "id": "interest_coverage",
+    "name": "Interest Coverage Ratio",
+    "category": "solvency",
+    "type": "derived",
+    "source_documents": ["Income Statement"],
+    "required_fields": [
+      "ebit",
+      "interest_expense"
+    ],
+    "formula": "ebit/interest_expense",
+    "aliases": ["interest cover"],
+    "unit": "ratio",
+    "mcp_tool": "calculate_kpi"
+  },
+
+  {
+    "id": "net_debt_to_ebitda",
+    "name": "Net Debt To EBITDA",
+    "category": "solvency",
+    "type": "derived",
+    "source_documents": [
+      "Balance Sheet",
+      "Income Statement"
+    ],
+    "required_fields": [
+      "net_debt",
+      "ebitda"
+    ],
+    "formula": "net_debt/ebitda",
+    "aliases": [],
+    "unit": "ratio",
+    "mcp_tool": "calculate_kpi"
+  },
+
+  {
+    "id": "roe",
+    "name": "Return On Equity",
+    "category": "returns",
+    "type": "derived",
+    "source_documents": [
+      "Income Statement",
+      "Balance Sheet"
+    ],
+    "required_fields": [
+      "net_income",
+      "shareholder_equity"
+    ],
+    "formula": "(net_income/shareholder_equity)*100",
+    "aliases": [
+      "return on equity",
+      "shareholder return"
+    ],
+    "unit": "%",
+    "mcp_tool": "calculate_kpi"
+  },
+
+  {
+    "id": "roa",
+    "name": "Return On Assets",
+    "category": "returns",
+    "type": "derived",
+    "source_documents": [
+      "Income Statement",
+      "Balance Sheet"
+    ],
+    "required_fields": [
+      "net_income",
+      "total_assets"
+    ],
+    "formula": "(net_income/total_assets)*100",
+    "aliases": [
+      "return on assets"
+    ],
+    "unit": "%",
+    "mcp_tool": "calculate_kpi"
+  },
+
+  {
+    "id": "roce",
+    "name": "Return On Capital Employed",
+    "category": "returns",
+    "type": "derived",
+    "source_documents": [
+      "Income Statement",
+      "Balance Sheet"
+    ],
+    "required_fields": [
+      "ebit",
+      "capital_employed"
+    ],
+    "formula": "(ebit/capital_employed)*100",
+    "aliases": [
+      "return on capital employed"
+    ],
+    "unit": "%",
+    "mcp_tool": "calculate_kpi"
+  },
+
+  {
+    "id": "roic",
+    "name": "Return On Invested Capital",
+    "category": "returns",
+    "type": "derived",
+    "source_documents": [
+      "Income Statement",
+      "Balance Sheet"
+    ],
+    "required_fields": [
+      "nopat",
+      "invested_capital"
+    ],
+    "formula": "(nopat/invested_capital)*100",
+    "aliases": [
+      "return on invested capital"
+    ],
+    "unit": "%",
+    "mcp_tool": "calculate_kpi"
+  },
+
+  {
+    "id": "asset_turnover",
+    "name": "Asset Turnover",
+    "category": "efficiency",
+    "type": "derived",
+    "source_documents": [
+      "Income Statement",
+      "Balance Sheet"
+    ],
+    "required_fields": [
+      "revenue",
+      "total_assets"
+    ],
+    "formula": "revenue/total_assets",
+    "aliases": [],
+    "unit": "ratio",
+    "mcp_tool": "calculate_kpi"
+  },
+
+  {
+    "id": "inventory_turnover",
+    "name": "Inventory Turnover",
+    "category": "efficiency",
+    "type": "derived",
+    "source_documents": [
+      "Income Statement",
+      "Balance Sheet"
+    ],
+    "required_fields": [
+      "cogs",
+      "inventory"
+    ],
+    "formula": "cogs/inventory",
+    "aliases": [],
+    "unit": "ratio",
+    "mcp_tool": "calculate_kpi"
+  },
+
+  {
+    "id": "receivables_turnover",
+    "name": "Receivables Turnover",
+    "category": "efficiency",
+    "type": "derived",
+    "source_documents": [
+      "Income Statement",
+      "Balance Sheet"
+    ],
+    "required_fields": [
+      "revenue",
+      "accounts_receivable"
+    ],
+    "formula": "revenue/accounts_receivable",
+    "aliases": [],
+    "unit": "ratio",
+    "mcp_tool": "calculate_kpi"
+  },
+
+  {
+    "id": "payables_turnover",
+    "name": "Payables Turnover",
+    "category": "efficiency",
+    "type": "derived",
+    "source_documents": [
+      "Income Statement",
+      "Balance Sheet"
+    ],
+    "required_fields": [
+      "cogs",
+      "accounts_payable"
+    ],
+    "formula": "cogs/accounts_payable",
+    "aliases": [],
+    "unit": "ratio",
+    "mcp_tool": "calculate_kpi"
+  },
+  
+  {
+    "id": "dso",
+    "name": "Days Sales Outstanding",
+    "category": "working_capital",
+    "type": "derived",
+    "source_documents": [
+      "Income Statement",
+      "Balance Sheet"
+    ],
+    "required_fields": [
+      "accounts_receivable",
+      "revenue"
+    ],
+    "formula": "(accounts_receivable/revenue)*365",
+    "aliases": [
+      "days receivable",
+      "collection period"
+    ],
+    "unit": "days",
+    "mcp_tool": "calculate_kpi"
+  },
+
+  {
+    "id": "dpo",
+    "name": "Days Payable Outstanding",
+    "category": "working_capital",
+    "type": "derived",
+    "source_documents": [
+      "Income Statement",
+      "Balance Sheet"
+    ],
+    "required_fields": [
+      "accounts_payable",
+      "cogs"
+    ],
+    "formula": "(accounts_payable/cogs)*365",
+    "aliases": [
+      "days payable"
+    ],
+    "unit": "days",
+    "mcp_tool": "calculate_kpi"
+  },
+
+  {
+    "id": "inventory_days",
+    "name": "Inventory Days",
+    "category": "working_capital",
+    "type": "derived",
+    "source_documents": [
+      "Income Statement",
+      "Balance Sheet"
+    ],
+    "required_fields": [
+      "inventory",
+      "cogs"
+    ],
+    "formula": "(inventory/cogs)*365",
+    "aliases": [
+      "days inventory outstanding",
+      "dio"
+    ],
+    "unit": "days",
+    "mcp_tool": "calculate_kpi"
+  },
+
+  {
+    "id": "cash_conversion_cycle",
+    "name": "Cash Conversion Cycle",
+    "category": "working_capital",
+    "type": "derived",
+    "source_documents": [
+      "Income Statement",
+      "Balance Sheet"
+    ],
+    "required_fields": [
+      "dso",
+      "inventory_days",
+      "dpo"
+    ],
+    "formula": "dso+inventory_days-dpo",
+    "aliases": [
+      "ccc"
+    ],
+    "unit": "days",
+    "mcp_tool": "calculate_kpi"
+  },
+
+  {
+    "id": "eps",
+    "name": "Earnings Per Share",
+    "category": "shareholder",
+    "type": "derived",
+    "source_documents": [
+      "Income Statement"
+    ],
+    "required_fields": [
+      "net_income",
+      "shares_outstanding"
+    ],
+    "formula": "net_income/shares_outstanding",
+    "aliases": [
+      "earnings per share"
+    ],
+    "unit": "USD",
+    "mcp_tool": "calculate_kpi"
+  },
+
+  {
+    "id": "diluted_eps",
+    "name": "Diluted EPS",
+    "category": "shareholder",
+    "type": "derived",
+    "source_documents": [
+      "Income Statement"
+    ],
+    "required_fields": [
+      "net_income",
+      "diluted_shares_outstanding"
+    ],
+    "formula": "net_income/diluted_shares_outstanding",
+    "aliases": [
+      "fully diluted eps"
+    ],
+    "unit": "USD",
+    "mcp_tool": "calculate_kpi"
+  },
+
+  {
+    "id": "book_value_per_share",
+    "name": "Book Value Per Share",
+    "category": "shareholder",
+    "type": "derived",
+    "source_documents": [
+      "Balance Sheet"
+    ],
+    "required_fields": [
+      "shareholder_equity",
+      "shares_outstanding"
+    ],
+    "formula": "shareholder_equity/shares_outstanding",
+    "aliases": [
+      "bvps"
+    ],
+    "unit": "USD",
+    "mcp_tool": "calculate_kpi"
+  },
+
+  {
+    "id": "dividend_payout_ratio",
+    "name": "Dividend Payout Ratio",
+    "category": "shareholder",
+    "type": "derived",
+    "source_documents": [
+      "Income Statement",
+      "Cash Flow Statement"
+    ],
+    "required_fields": [
+      "dividends_paid",
+      "net_income"
+    ],
+    "formula": "(dividends_paid/net_income)*100",
+    "aliases": [
+      "payout ratio"
+    ],
+    "unit": "%",
+    "mcp_tool": "calculate_kpi"
+  },
+
+  {
+    "id": "effective_tax_rate",
+    "name": "Effective Tax Rate",
+    "category": "taxation",
+    "type": "derived",
+    "source_documents": [
+      "Income Statement"
+    ],
+    "required_fields": [
+      "tax_expense",
+      "pretax_income"
+    ],
+    "formula": "(tax_expense/pretax_income)*100",
+    "aliases": [
+      "tax rate"
+    ],
+    "unit": "%",
+    "mcp_tool": "calculate_kpi"
+  },
+
+  {
+    "id": "revenue_cagr",
+    "name": "Revenue CAGR",
+    "category": "growth",
+    "type": "derived",
+    "source_documents": [
+      "Income Statement"
+    ],
+    "required_fields": [
+      "start_revenue",
+      "end_revenue",
+      "years"
+    ],
+    "formula": "((end_revenue/start_revenue)^(1/years)-1)*100",
+    "aliases": [
+      "compound annual growth rate"
+    ],
+    "unit": "%",
+    "mcp_tool": "calculate_kpi"
+  },
+
+  {
+    "id": "earnings_growth",
+    "name": "Earnings Growth",
+    "category": "growth",
+    "type": "derived",
+    "source_documents": [
+      "Income Statement"
+    ],
+    "required_fields": [
+      "current_net_income",
+      "previous_net_income"
+    ],
+    "formula": "((current_net_income-previous_net_income)/previous_net_income)*100",
+    "aliases": [
+      "profit growth",
+      "income growth"
+    ],
+    "unit": "%",
+    "mcp_tool": "calculate_kpi"
+  } ,
+  
+  {
+    "id": "net_interest_margin",
+    "name": "Net Interest Margin",
+    "category": "banking",
+    "type": "derived",
+    "source_documents": ["Bank Annual Report"],
+    "required_fields": [
+      "net_interest_income",
+      "average_earning_assets"
+    ],
+    "formula": "(net_interest_income/average_earning_assets)*100",
+    "aliases": [
+      "nim",
+      "interest margin"
+    ],
+    "unit": "%",
+    "mcp_tool": "calculate_kpi"
+  },
+
+  {
+    "id": "casa_ratio",
+    "name": "CASA Ratio",
+    "category": "banking",
+    "type": "derived",
+    "source_documents": ["Bank Annual Report"],
+    "required_fields": [
+      "casa_deposits",
+      "total_deposits"
+    ],
+    "formula": "(casa_deposits/total_deposits)*100",
+    "aliases": [
+      "current account savings account ratio",
+      "casa"
+    ],
+    "unit": "%",
+    "mcp_tool": "calculate_kpi"
+  },
+
+  {
+    "id": "gross_npa_ratio",
+    "name": "Gross NPA Ratio",
+    "category": "banking",
+    "type": "derived",
+    "source_documents": ["Bank Annual Report"],
+    "required_fields": [
+      "gross_npa",
+      "gross_advances"
+    ],
+    "formula": "(gross_npa/gross_advances)*100",
+    "aliases": [
+      "gross non performing assets ratio"
+    ],
+    "unit": "%",
+    "mcp_tool": "calculate_kpi"
+  },
+
+  {
+    "id": "net_npa_ratio",
+    "name": "Net NPA Ratio",
+    "category": "banking",
+    "type": "derived",
+    "source_documents": ["Bank Annual Report"],
+    "required_fields": [
+      "net_npa",
+      "net_advances"
+    ],
+    "formula": "(net_npa/net_advances)*100",
+    "aliases": [
+      "net non performing assets ratio"
+    ],
+    "unit": "%",
+    "mcp_tool": "calculate_kpi"
+  },
+
+  {
+    "id": "provision_coverage_ratio",
+    "name": "Provision Coverage Ratio",
+    "category": "banking",
+    "type": "derived",
+    "source_documents": ["Bank Annual Report"],
+    "required_fields": [
+      "loan_loss_provisions",
+      "gross_npa"
+    ],
+    "formula": "(loan_loss_provisions/gross_npa)*100",
+    "aliases": [
+      "pcr"
+    ],
+    "unit": "%",
+    "mcp_tool": "calculate_kpi"
+  },
+
+  {
+    "id": "capital_adequacy_ratio",
+    "name": "Capital Adequacy Ratio",
+    "category": "banking",
+    "type": "derived",
+    "source_documents": ["Bank Annual Report"],
+    "required_fields": [
+      "total_capital",
+      "risk_weighted_assets"
+    ],
+    "formula": "(total_capital/risk_weighted_assets)*100",
+    "aliases": [
+      "car",
+      "capital ratio"
+    ],
+    "unit": "%",
+    "mcp_tool": "calculate_kpi"
+  },
+
+  {
+    "id": "tier1_capital_ratio",
+    "name": "Tier 1 Capital Ratio",
+    "category": "banking",
+    "type": "derived",
+    "source_documents": ["Bank Annual Report"],
+    "required_fields": [
+      "tier1_capital",
+      "risk_weighted_assets"
+    ],
+    "formula": "(tier1_capital/risk_weighted_assets)*100",
+    "aliases": [
+      "tier 1 ratio"
+    ],
+    "unit": "%",
+    "mcp_tool": "calculate_kpi"
+  },
+
+  {
+    "id": "loan_to_deposit_ratio",
+    "name": "Loan To Deposit Ratio",
+    "category": "banking",
+    "type": "derived",
+    "source_documents": ["Bank Annual Report"],
+    "required_fields": [
+      "total_loans",
+      "total_deposits"
+    ],
+    "formula": "(total_loans/total_deposits)*100",
+    "aliases": [
+      "ldr",
+      "credit deposit ratio"
+    ],
+    "unit": "%",
+    "mcp_tool": "calculate_kpi"
+  },
+
+  {
+    "id": "cost_to_income_ratio",
+    "name": "Cost To Income Ratio",
+    "category": "banking",
+    "type": "derived",
+    "source_documents": ["Bank Annual Report"],
+    "required_fields": [
+      "operating_expenses",
+      "operating_income"
+    ],
+    "formula": "(operating_expenses/operating_income)*100",
+    "aliases": [
+      "efficiency ratio"
+    ],
+    "unit": "%",
+    "mcp_tool": "calculate_kpi"
+  },
+
+  {
+    "id": "credit_growth_ratio",
+    "name": "Credit Growth Ratio",
+    "category": "banking",
+    "type": "derived",
+    "source_documents": ["Bank Annual Report"],
+    "required_fields": [
+      "current_loans",
+      "previous_loans"
+    ],
+    "formula": "((current_loans-previous_loans)/previous_loans)*100",
+    "aliases": [
+      "loan growth"
+    ],
+    "unit": "%",
+    "mcp_tool": "calculate_kpi"
+  }
+
+  ]
+}

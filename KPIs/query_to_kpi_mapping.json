@@ -1,0 +1,398 @@
+{
+  "version": "1.0",
+  "total_kpis": 50,
+  "query_to_kpi_mapping": [
+    {
+      "kpi_id": "revenue",
+      "sample_queries": [
+        "what was revenue",
+        "show revenue",
+        "total sales",
+        "top line revenue"
+      ],
+      "intent": "financial_metric_lookup"
+    },
+    {
+      "kpi_id": "revenue_growth",
+      "sample_queries": [
+        "revenue growth",
+        "sales growth",
+        "growth rate",
+        "how much revenue increased"
+      ],
+      "intent": "financial_metric_lookup"
+    },
+    {
+      "kpi_id": "yoy_revenue_growth",
+      "sample_queries": [
+        "yoy revenue growth",
+        "annual revenue growth",
+        "year over year revenue"
+      ],
+      "intent": "financial_metric_lookup"
+    },
+    {
+      "kpi_id": "gross_profit",
+      "sample_queries": [
+        "gross profit",
+        "gross earnings"
+      ],
+      "intent": "financial_metric_lookup"
+    },
+    {
+      "kpi_id": "gross_margin",
+      "sample_queries": [
+        "gross margin",
+        "gross profit margin"
+      ],
+      "intent": "financial_metric_lookup"
+    },
+    {
+      "kpi_id": "ebitda",
+      "sample_queries": [
+        "ebitda",
+        "operating earnings before depreciation"
+      ],
+      "intent": "financial_metric_lookup"
+    },
+    {
+      "kpi_id": "ebitda_margin",
+      "sample_queries": [
+        "ebitda margin",
+        "operating profitability margin"
+      ],
+      "intent": "financial_metric_lookup"
+    },
+    {
+      "kpi_id": "ebit",
+      "sample_queries": [
+        "ebit",
+        "operating profit"
+      ],
+      "intent": "financial_metric_lookup"
+    },
+    {
+      "kpi_id": "operating_margin",
+      "sample_queries": [
+        "operating margin",
+        "operating profit margin"
+      ],
+      "intent": "financial_metric_lookup"
+    },
+    {
+      "kpi_id": "net_income",
+      "sample_queries": [
+        "net income",
+        "net earnings",
+        "profit after tax"
+      ],
+      "intent": "financial_metric_lookup"
+    },
+    {
+      "kpi_id": "net_profit_margin",
+      "sample_queries": [
+        "net profit margin",
+        "bottom line margin"
+      ],
+      "intent": "financial_metric_lookup"
+    },
+    {
+      "kpi_id": "operating_cash_flow",
+      "sample_queries": [
+        "operating cash flow",
+        "cash from operations"
+      ],
+      "intent": "financial_metric_lookup"
+    },
+    {
+      "kpi_id": "free_cash_flow",
+      "sample_queries": [
+        "free cash flow",
+        "fcf"
+      ],
+      "intent": "financial_metric_lookup"
+    },
+    {
+      "kpi_id": "cash_flow_margin",
+      "sample_queries": [
+        "cash flow margin",
+        "ocf margin"
+      ],
+      "intent": "financial_metric_lookup"
+    },
+    {
+      "kpi_id": "current_ratio",
+      "sample_queries": [
+        "current ratio",
+        "liquidity ratio"
+      ],
+      "intent": "financial_metric_lookup"
+    },
+    {
+      "kpi_id": "quick_ratio",
+      "sample_queries": [
+        "quick ratio",
+        "acid test ratio"
+      ],
+      "intent": "financial_metric_lookup"
+    },
+    {
+      "kpi_id": "working_capital",
+      "sample_queries": [
+        "working capital",
+        "net working capital"
+      ],
+      "intent": "financial_metric_lookup"
+    },
+    {
+      "kpi_id": "debt_to_equity",
+      "sample_queries": [
+        "debt to equity",
+        "d/e ratio"
+      ],
+      "intent": "financial_metric_lookup"
+    },
+    {
+      "kpi_id": "debt_to_assets",
+      "sample_queries": [
+        "debt to assets"
+      ],
+      "intent": "financial_metric_lookup"
+    },
+    {
+      "kpi_id": "interest_coverage",
+      "sample_queries": [
+        "interest coverage",
+        "interest cover"
+      ],
+      "intent": "financial_metric_lookup"
+    },
+    {
+      "kpi_id": "net_debt_to_ebitda",
+      "sample_queries": [
+        "net debt to ebitda"
+      ],
+      "intent": "financial_metric_lookup"
+    },
+    {
+      "kpi_id": "roe",
+      "sample_queries": [
+        "roe",
+        "return on equity"
+      ],
+      "intent": "financial_metric_lookup"
+    },
+    {
+      "kpi_id": "roa",
+      "sample_queries": [
+        "roa",
+        "return on assets"
+      ],
+      "intent": "financial_metric_lookup"
+    },
+    {
+      "kpi_id": "roce",
+      "sample_queries": [
+        "roce",
+        "return on capital employed"
+      ],
+      "intent": "financial_metric_lookup"
+    },
+    {
+      "kpi_id": "roic",
+      "sample_queries": [
+        "roic",
+        "return on invested capital"
+      ],
+      "intent": "financial_metric_lookup"
+    },
+    {
+      "kpi_id": "asset_turnover",
+      "sample_queries": [
+        "asset turnover"
+      ],
+      "intent": "financial_metric_lookup"
+    },
+    {
+      "kpi_id": "inventory_turnover",
+      "sample_queries": [
+        "inventory turnover"
+      ],
+      "intent": "financial_metric_lookup"
+    },
+    {
+      "kpi_id": "receivables_turnover",
+      "sample_queries": [
+        "receivables turnover"
+      ],
+      "intent": "financial_metric_lookup"
+    },
+    {
+      "kpi_id": "payables_turnover",
+      "sample_queries": [
+        "payables turnover"
+      ],
+      "intent": "financial_metric_lookup"
+    },
+    {
+      "kpi_id": "dso",
+      "sample_queries": [
+        "days sales outstanding",
+        "dso"
+      ],
+      "intent": "financial_metric_lookup"
+    },
+    {
+      "kpi_id": "dpo",
+      "sample_queries": [
+        "days payable outstanding",
+        "dpo"
+      ],
+      "intent": "financial_metric_lookup"
+    },
+    {
+      "kpi_id": "inventory_days",
+      "sample_queries": [
+        "inventory days",
+        "dio"
+      ],
+      "intent": "financial_metric_lookup"
+    },
+    {
+      "kpi_id": "cash_conversion_cycle",
+      "sample_queries": [
+        "cash conversion cycle",
+        "ccc"
+      ],
+      "intent": "financial_metric_lookup"
+    },
+    {
+      "kpi_id": "eps",
+      "sample_queries": [
+        "eps",
+        "earnings per share"
+      ],
+      "intent": "financial_metric_lookup"
+    },
+    {
+      "kpi_id": "diluted_eps",
+      "sample_queries": [
+        "diluted eps"
+      ],
+      "intent": "financial_metric_lookup"
+    },
+    {
+      "kpi_id": "book_value_per_share",
+      "sample_queries": [
+        "book value per share",
+        "bvps"
+      ],
+      "intent": "financial_metric_lookup"
+    },
+    {
+      "kpi_id": "dividend_payout_ratio",
+      "sample_queries": [
+        "dividend payout ratio"
+      ],
+      "intent": "financial_metric_lookup"
+    },
+    {
+      "kpi_id": "effective_tax_rate",
+      "sample_queries": [
+        "effective tax rate"
+      ],
+      "intent": "financial_metric_lookup"
+    },
+    {
+      "kpi_id": "revenue_cagr",
+      "sample_queries": [
+        "revenue cagr",
+        "compound annual growth rate"
+      ],
+      "intent": "financial_metric_lookup"
+    },
+    {
+      "kpi_id": "earnings_growth",
+      "sample_queries": [
+        "earnings growth",
+        "profit growth"
+      ],
+      "intent": "financial_metric_lookup"
+    },
+    {
+      "kpi_id": "net_interest_margin",
+      "sample_queries": [
+        "nim",
+        "net interest margin"
+      ],
+      "intent": "financial_metric_lookup"
+    },
+    {
+      "kpi_id": "casa_ratio",
+      "sample_queries": [
+        "casa ratio"
+      ],
+      "intent": "financial_metric_lookup"
+    },
+    {
+      "kpi_id": "gross_npa_ratio",
+      "sample_queries": [
+        "gross npa ratio"
+      ],
+      "intent": "financial_metric_lookup"
+    },
+    {
+      "kpi_id": "net_npa_ratio",
+      "sample_queries": [
+        "net npa ratio"
+      ],
+      "intent": "financial_metric_lookup"
+    },
+    {
+      "kpi_id": "provision_coverage_ratio",
+      "sample_queries": [
+        "pcr",
+        "provision coverage ratio"
+      ],
+      "intent": "financial_metric_lookup"
+    },
+    {
+      "kpi_id": "capital_adequacy_ratio",
+      "sample_queries": [
+        "car",
+        "capital adequacy ratio"
+      ],
+      "intent": "financial_metric_lookup"
+    },
+    {
+      "kpi_id": "tier1_capital_ratio",
+      "sample_queries": [
+        "tier1 capital ratio"
+      ],
+      "intent": "financial_metric_lookup"
+    },
+    {
+      "kpi_id": "loan_to_deposit_ratio",
+      "sample_queries": [
+        "loan to deposit ratio",
+        "ldr"
+      ],
+      "intent": "financial_metric_lookup"
+    },
+    {
+      "kpi_id": "cost_to_income_ratio",
+      "sample_queries": [
+        "cost to income ratio"
+      ],
+      "intent": "financial_metric_lookup"
+    },
+    {
+      "kpi_id": "credit_growth_ratio",
+      "sample_queries": [
+        "credit growth ratio",
+        "loan growth"
+      ],
+      "intent": "financial_metric_lookup"
+    }
+  ]
+}

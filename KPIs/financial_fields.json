@@ -1,0 +1,382 @@
+{
+"version": "1.0",
+"domain": "financial_rag",
+"description": "Canonical financial field registry used by RAG extraction and MCP KPI calculations",
+
+"financial_fields": [
+
+```
+{
+  "field_name": "revenue",
+  "category": "income_statement",
+  "data_type": "currency",
+  "aliases": ["sales","net sales","total revenue","operating revenue"]
+},
+
+{
+  "field_name": "gross_profit",
+  "category": "income_statement",
+  "data_type": "currency",
+  "aliases": ["gross earnings"]
+},
+
+{
+  "field_name": "cogs",
+  "category": "income_statement",
+  "data_type": "currency",
+  "aliases": ["cost of goods sold","cost of sales"]
+},
+
+{
+  "field_name": "ebitda",
+  "category": "income_statement",
+  "data_type": "currency",
+  "aliases": ["adjusted ebitda"]
+},
+
+{
+  "field_name": "ebit",
+  "category": "income_statement",
+  "data_type": "currency",
+  "aliases": ["operating income","operating profit"]
+},
+
+{
+  "field_name": "operating_income",
+  "category": "income_statement",
+  "data_type": "currency",
+  "aliases": ["operating profit"]
+},
+
+{
+  "field_name": "net_income",
+  "category": "income_statement",
+  "data_type": "currency",
+  "aliases": ["net earnings","profit after tax","pat"]
+},
+
+{
+  "field_name": "interest_expense",
+  "category": "income_statement",
+  "data_type": "currency",
+  "aliases": ["finance cost","borrowing cost"]
+},
+
+{
+  "field_name": "tax_expense",
+  "category": "income_statement",
+  "data_type": "currency",
+  "aliases": ["income tax expense"]
+},
+
+{
+  "field_name": "pretax_income",
+  "category": "income_statement",
+  "data_type": "currency",
+  "aliases": ["profit before tax","pbt","income before tax"]
+},
+
+{
+  "field_name": "nopat",
+  "category": "income_statement",
+  "data_type": "currency",
+  "aliases": ["net operating profit after tax"]
+},
+
+{
+  "field_name": "operating_cash_flow",
+  "category": "cash_flow_statement",
+  "data_type": "currency",
+  "aliases": ["cash from operations","cash flow from operations"]
+},
+
+{
+  "field_name": "capex",
+  "category": "cash_flow_statement",
+  "data_type": "currency",
+  "aliases": ["capital expenditure","capital expenditures"]
+},
+
+{
+  "field_name": "dividends_paid",
+  "category": "cash_flow_statement",
+  "data_type": "currency",
+  "aliases": ["dividend payment"]
+},
+
+{
+  "field_name": "current_assets",
+  "category": "balance_sheet",
+  "data_type": "currency",
+  "aliases": []
+},
+
+{
+  "field_name": "current_liabilities",
+  "category": "balance_sheet",
+  "data_type": "currency",
+  "aliases": []
+},
+
+{
+  "field_name": "inventory",
+  "category": "balance_sheet",
+  "data_type": "currency",
+  "aliases": ["stock in trade"]
+},
+
+{
+  "field_name": "accounts_receivable",
+  "category": "balance_sheet",
+  "data_type": "currency",
+  "aliases": ["trade receivables","receivables"]
+},
+
+{
+  "field_name": "accounts_payable",
+  "category": "balance_sheet",
+  "data_type": "currency",
+  "aliases": ["trade payables","payables"]
+},
+
+{
+  "field_name": "total_assets",
+  "category": "balance_sheet",
+  "data_type": "currency",
+  "aliases": []
+},
+
+{
+  "field_name": "total_debt",
+  "category": "balance_sheet",
+  "data_type": "currency",
+  "aliases": ["borrowings","total borrowings"]
+},
+
+{
+  "field_name": "net_debt",
+  "category": "balance_sheet",
+  "data_type": "currency",
+  "aliases": []
+},
+
+{
+  "field_name": "shareholder_equity",
+  "category": "balance_sheet",
+  "data_type": "currency",
+  "aliases": ["stockholders equity","net worth"]
+},
+
+{
+  "field_name": "capital_employed",
+  "category": "balance_sheet",
+  "data_type": "currency",
+  "aliases": []
+},
+
+{
+  "field_name": "invested_capital",
+  "category": "balance_sheet",
+  "data_type": "currency",
+  "aliases": []
+},
+
+{
+  "field_name": "shares_outstanding",
+  "category": "shareholder",
+  "data_type": "number",
+  "aliases": ["common shares outstanding"]
+},
+
+{
+  "field_name": "diluted_shares_outstanding",
+  "category": "shareholder",
+  "data_type": "number",
+  "aliases": []
+},
+
+{
+  "field_name": "start_revenue",
+  "category": "trend_analysis",
+  "data_type": "currency",
+  "aliases": []
+},
+
+{
+  "field_name": "end_revenue",
+  "category": "trend_analysis",
+  "data_type": "currency",
+  "aliases": []
+},
+
+{
+  "field_name": "current_revenue",
+  "category": "trend_analysis",
+  "data_type": "currency",
+  "aliases": []
+},
+
+{
+  "field_name": "previous_revenue",
+  "category": "trend_analysis",
+  "data_type": "currency",
+  "aliases": []
+},
+
+{
+  "field_name": "current_year_revenue",
+  "category": "trend_analysis",
+  "data_type": "currency",
+  "aliases": []
+},
+
+{
+  "field_name": "previous_year_revenue",
+  "category": "trend_analysis",
+  "data_type": "currency",
+  "aliases": []
+},
+
+{
+  "field_name": "current_net_income",
+  "category": "trend_analysis",
+  "data_type": "currency",
+  "aliases": []
+},
+
+{
+  "field_name": "previous_net_income",
+  "category": "trend_analysis",
+  "data_type": "currency",
+  "aliases": []
+},
+
+{
+  "field_name": "years",
+  "category": "trend_analysis",
+  "data_type": "integer",
+  "aliases": []
+},
+
+{
+  "field_name": "inventory_days",
+  "category": "working_capital",
+  "data_type": "number",
+  "aliases": ["dio"]
+},
+
+{
+  "field_name": "net_interest_income",
+  "category": "banking",
+  "data_type": "currency",
+  "aliases": ["nii"]
+},
+
+{
+  "field_name": "average_earning_assets",
+  "category": "banking",
+  "data_type": "currency",
+  "aliases": []
+},
+
+{
+  "field_name": "casa_deposits",
+  "category": "banking",
+  "data_type": "currency",
+  "aliases": []
+},
+
+{
+  "field_name": "total_deposits",
+  "category": "banking",
+  "data_type": "currency",
+  "aliases": []
+},
+
+{
+  "field_name": "gross_npa",
+  "category": "banking",
+  "data_type": "currency",
+  "aliases": []
+},
+
+{
+  "field_name": "gross_advances",
+  "category": "banking",
+  "data_type": "currency",
+  "aliases": []
+},
+
+{
+  "field_name": "net_npa",
+  "category": "banking",
+  "data_type": "currency",
+  "aliases": []
+},
+
+{
+  "field_name": "net_advances",
+  "category": "banking",
+  "data_type": "currency",
+  "aliases": []
+},
+
+{
+  "field_name": "loan_loss_provisions",
+  "category": "banking",
+  "data_type": "currency",
+  "aliases": ["provisions"]
+},
+
+{
+  "field_name": "total_capital",
+  "category": "banking",
+  "data_type": "currency",
+  "aliases": []
+},
+
+{
+  "field_name": "risk_weighted_assets",
+  "category": "banking",
+  "data_type": "currency",
+  "aliases": ["rwa"]
+},
+
+{
+  "field_name": "tier1_capital",
+  "category": "banking",
+  "data_type": "currency",
+  "aliases": []
+},
+
+{
+  "field_name": "total_loans",
+  "category": "banking",
+  "data_type": "currency",
+  "aliases": ["advances"]
+},
+
+{
+  "field_name": "operating_expenses",
+  "category": "banking",
+  "data_type": "currency",
+  "aliases": ["opex"]
+},
+
+{
+  "field_name": "current_loans",
+  "category": "banking",
+  "data_type": "currency",
+  "aliases": []
+},
+
+{
+  "field_name": "previous_loans",
+  "category": "banking",
+  "data_type": "currency",
+  "aliases": []
+}
+```
+
+]
+}
